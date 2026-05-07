@@ -1,0 +1,269 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0">
+  <diagram name="第 1 页" id="tL92UC_6o0ExLwrSdQbs">
+    <mxGraphModel dx="9200" dy="4750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;复制并拼接成双倍序列&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;xa_cp、&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;seqx_cp、&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;secx_cp&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="210" x="664.24" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-2" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" target="C0FAu6-isoBX7dQVQz3h-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;变量声明和初始化&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="210" x="664.24" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-4" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-5" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;设置TM-score的归一化长度&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Lnorm_tmp&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="210" x="671.62" y="409" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-6" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-7" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;TMalign_main&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;fast_opt = true：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;第一次&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;TMalign_main&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;，&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;使用拼接后双倍查询链&lt;/span&gt;&lt;span style=&quot;font-size: 12px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;xa_cp&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;与目标链ya，&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;进行&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;快速模式比对&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="264.75" x="644.37" y="519" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-8" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-9" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 12px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1、去除比序列seqxA_cp中的空位列&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 12px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2、压缩seqyA序列的长度为2*xlen。&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center; font-size: 12px;&quot;&gt;3、结果分别保存到&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;seqxA和&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;seqyA中&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 截断使它们的长度为&lt;/span&gt;&lt;span style=&quot;font-size: 12px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2*xlen&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="229" x="662.86" y="639" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-10" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-11" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;内存清理&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="229" x="662.86" y="871" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-12" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-13" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;初始化变量&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;rmsd0、&lt;/span&gt;&lt;span style=&quot;font-size: 12px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Liden、&lt;/span&gt;&lt;span style=&quot;font-size: 12px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;n_ali、&lt;/span&gt;&lt;span style=&quot;font-size: 12px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;n_ali8&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="239.5" x="657.61" y="991" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-14" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-16" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-15" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-16" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-16" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="(n_ali8&amp;gt;=cp_aln_best || TM4&amp;gt;=TM4_cp&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;原始序列的比对结果&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;是否优于&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;双倍拼接处理后的环状排列比对结果&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="347.37" x="603.6700000000001" y="1261" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-17" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-18" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;TMalign_main&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;fast_opt = true&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;第二次&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;TMalign_main&lt;/span&gt;&lt;span style=&quot;font-size: 12px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;，&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;使用原始查询链xa和目标链ya，&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;进行&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;快速模式比对&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="262.12" x="647" y="1111" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-19" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-20" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="974.99" y="1591" />
+            </Array>
+            <mxPoint x="784.99" y="1590.9999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;cp_point=0&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="859.99" y="1491" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-21" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-22" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;清理内存&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="230" x="663.06" y="1651" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-23" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-24" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;初始化变量&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;rmsd0、&lt;/span&gt;&lt;span style=&quot;font-size: 12px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Liden、&lt;/span&gt;&lt;span style=&quot;font-size: 12px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;n_ali、&lt;/span&gt;&lt;span style=&quot;font-size: 12px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;n_ali8&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="239.5" x="659.33" y="1741" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-25" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-26" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-26" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;cp_point != 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;是否采用了&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;双倍拼接的环状排列策略&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="347.37" x="605.4" y="1871" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-27" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-28" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;将双倍结构中的残基的，&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px;&quot;&gt;三维坐标 xa_cp、单字母序seqx_cp中、二级结构状态&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;secx_cp，&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;中从&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px;&quot;&gt;&amp;nbsp;cp_point 开始的连续 xlen 个残基的相关的数据分别复制到&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;复制到 xa_cp[0..xlen-1]、&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;seqx_cp[&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;0..xlen-1]、&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;secx_cp[&lt;/span&gt;&lt;span style=&quot;font-size: 12px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;0..xlen-1&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;]中&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;，&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;形成重排后的查询结构&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="370" x="829.99" y="2131" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;TMalign_main&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;fast_opt = true&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;第三次TMalign_main，&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;用重排后的查询链&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;xa_cp(xlen)与目标链ya，&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;进行快速比对&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="254" x="887.99" y="2381" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-30" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-31" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1014.99" y="2691" />
+            </Array>
+            <mxPoint x="784.99" y="2691" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-31" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="n_ali8&amp;gt;=cp_aln_best || TM4&amp;gt;=TM4_cp&lt;div&gt;&lt;div&gt;原始序列的比对结果&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;是否优于&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;重排后的查询链比对结果&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="347.37" x="841.31" y="2531" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-32" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-33" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 滑动窗口方法寻找&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;1、环状排列的最优断点&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); text-align: center; font-size: 12px;&quot;&gt;cp_point&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); text-align: center; font-size: 12px;&quot;&gt;2、窗口内非空位的数量&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px; text-align: center;&quot;&gt;cp_aln_best&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="236.06" x="659.3299999999999" y="751" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-34" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-35" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;将单字母序seqx_cp、二级结构状态secx_cp的长度截断为xlen&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="220" x="904.99" y="2271" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;cp_point = 0&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="186.56" x="1054.99" y="2741" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;将查询链的残基坐标、单字母序、二级结构状态，&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;回退到原始状态值：&lt;/span&gt;&lt;div&gt;&lt;div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;xa_cp[r][0]=xa[r][0];&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;nbsp;xa_cp[r][1]=xa[r][1];&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;nbsp; xa_cp[r][2]=xa[r][2];&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;nbsp; seqx_cp[r]=seqx[r];&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;nbsp; secx_cp[r]=secx[r];&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="300" x="994.99" y="2841" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;TMalign_main&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;用户设置的fast_opt值&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;第四次TMalign_main，&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;使用最终确定的 坐标xa_cp、单字母序&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); text-align: center; font-size: 12px;&quot;&gt;seqx_cp、二级结构状态&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); text-align: center; font-size: 12px;&quot;&gt;secx_cp&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;，&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;进行完整的比对搜索，&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;得到最终的旋转矩阵、&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;TM-score 和&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-size: 12px;&quot;&gt;比对序列 seqxA_cp, seqyA_cp。&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="523.99" x="603" y="3102" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-39" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-40" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1105.99" y="3641" />
+              <mxPoint x="884.99" y="3641" />
+            </Array>
+            <mxPoint x="884.99" y="3731" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;align=center;" value="&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;1、找到环化断点i&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;2、在最终输出的查询链的比对序列 seqxA 的第i位&lt;/span&gt;&lt;span style=&quot;font-size: 12px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;处插入 &#39;*&#39;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;nbsp; 3、目标链的比对序列 seqyA&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px;&quot;&gt;&amp;nbsp;的第i位&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px;&quot;&gt;处插入 ‘-’&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;4、标记序列 seqM 的&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px;&quot;&gt;第i位&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px;&quot;&gt;处插入&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;nbsp;&#39; &#39;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;nbsp; 来指示环化切断点的位置。&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="399" x="905.99" y="3471" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-41" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="cp_point&amp;gt;0&lt;div&gt;最终是否使用了，双倍拼接的环状排列策略&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="347.37" x="687.99" y="3251" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;align=center;" value="&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;将无环化处理的结果复制到最终输出变量&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;seqxA=seqxA_cp&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;seqyA=seqyA_cp&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="360" x="489.99" y="3471" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-43" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;清理内存&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="230" x="774.99" y="3729" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-44" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;return cp_point&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="230" x="774.99" y="3821" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-45" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-1" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.467;entryY=0.007;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-46" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-29" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.503;entryY=0.034;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-47" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-31" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.515;entryY=0.11;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-48" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-36" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.51;entryY=0.016;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-49" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-26" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.337;entryY=0.044;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-50" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-37" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.592;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-51" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-38" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.511;entryY=-0.018;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-52" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-41" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.519;entryY=-0.022;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-53" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-41" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.509;entryY=-0.061;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-54" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-43" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.495;entryY=-0.069;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-55" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="&lt;b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Y&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="841.31" y="1391" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-56" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;N&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="687.99" y="1481" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-57" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="&lt;b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Y&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="874.24" y="2011" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-58" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;N&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="694.99" y="2121" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-59" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;N&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="841.31" y="2651" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-60" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="&lt;b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Y&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="1055.99" y="2641" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-61" edge="1" parent="1" source="C0FAu6-isoBX7dQVQz3h-42" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.476;entryY=0.077;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#b85450;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;fillColor=#f8cecc;" target="C0FAu6-isoBX7dQVQz3h-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-62" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=none;strokeColor=#0000FF;" value="" vertex="1">
+          <mxGeometry height="120" width="570" x="489.99" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-63" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="&lt;font style=&quot;font-size: 12px; color: rgb(255, 51, 51);&quot;&gt;&lt;b&gt;1.复制并拼接双倍结构&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="497.61" y="281" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-64" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=none;strokeColor=#0000FF;" value="" vertex="1">
+          <mxGeometry height="120" width="730" x="314.99" y="499" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-65" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="&lt;b style=&quot;color: rgb(255, 51, 51); font-size: 12px;&quot;&gt;2.拼接双倍结构与目标结构进行一次快速比对&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="250" x="334.99" y="499" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-66" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=none;strokeColor=#0000FF;" value="" vertex="1">
+          <mxGeometry height="93" width="730" x="314.99" y="628" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-67" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="&lt;b style=&quot;color: rgb(255, 51, 51); font-size: 12px;&quot;&gt;3.压缩比对序列&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="324.99" y="639" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-68" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=none;strokeColor=#0000FF;" value="" vertex="1">
+          <mxGeometry height="116" width="730" x="314.99" y="725" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-69" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="&lt;b style=&quot;color: rgb(255, 51, 51); font-size: 12px;&quot;&gt;4.滑动窗口寻找最优断点&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="324.99" y="741" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-70" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=none;strokeColor=#0000FF;" value="" vertex="1">
+          <mxGeometry height="270" width="790" x="314.99" y="951" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-71" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="&lt;b style=&quot;color: rgb(255, 51, 51); font-size: 12px;&quot;&gt;5.始结构与目标结构进行一次快速比对&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="230" x="334.99" y="971" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-72" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=none;strokeColor=#0000FF;" value="" vertex="1">
+          <mxGeometry height="390" width="810" x="314.99" y="1231" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-73" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="&lt;b style=&quot;color: rgb(255, 51, 51); font-size: 12px;&quot;&gt;6.决定是否采纳环化排列结构策略&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="230" x="334.99" y="1251" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-74" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=none;strokeColor=#0000FF;" value="" vertex="1">
+          <mxGeometry height="510" width="1250" x="254.99" y="1837" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-75" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="&lt;b style=&quot;color: rgb(255, 51, 51); font-size: 12px;&quot;&gt;7.根据断点重排结构&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="122.62" x="274.99" y="1851" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-76" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=none;strokeColor=#0000FF;" value="" vertex="1">
+          <mxGeometry height="630" width="1250" x="254.99" y="2361" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-77" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="&lt;b style=&quot;color: rgb(255, 51, 51); font-size: 12px;&quot;&gt;8.用重排后的结构再进行一次快速比对&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="240" x="274.99" y="2371" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-78" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=none;strokeColor=#0000FF;" value="" vertex="1">
+          <mxGeometry height="180" width="1250" x="246.31" y="3031" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-79" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="&lt;font color=&quot;#ff3333&quot;&gt;&lt;b style=&quot;color: rgb(255, 51, 51); font-size: 12px;&quot;&gt;9. &lt;/b&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;最终精确比对&lt;/b&gt;&lt;/span&gt;&lt;b style=&quot;color: rgb(255, 51, 51); font-size: 12px;&quot;&gt;&amp;nbsp;&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="122.62" x="284.99" y="3041" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-80" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=none;strokeColor=#0000FF;" value="" vertex="1">
+          <mxGeometry height="470" width="1250" x="240" y="3231" as="geometry" />
+        </mxCell>
+        <mxCell id="C0FAu6-isoBX7dQVQz3h-81" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="&lt;font color=&quot;#ff3333&quot;&gt;&lt;b style=&quot;color: rgb(255, 51, 51); font-size: 12px;&quot;&gt;9.&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;font color=&quot;#ff3333&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;生成比对序列的输出格式&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="173" x="261.99" y="3251" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
