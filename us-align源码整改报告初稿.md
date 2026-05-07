@@ -85,30 +85,15 @@
 ### 1.1比对主入口函数（USalign.cpp）
 
   -----------------------------------------------------------------------
-| 函数名        用到的C语言数据 | 构                     所在文件 |  |
-|---|---|---|
-| int TMalign(\... | char\*, double\*\*, double\[3\], | USalign.cpp |
-|  | double\[3\]\[3\] |  |
-
-
-   int MMalign(\...)  char\*, double\*\*, int\*\*,          USalign.cpp
-                      double\[3\], double\[3\]\[3\]
-
-  int SOIalign(\...)  char\*, double\*\*, int\*\*, int\*,   USalign.cpp
-                      double\*, double\[3\],
-                      double\[3\]\[3\]
-
-  int flexalign(\...) char\*, double\*\*, double\[3\],      USalign.cpp
-                      double\[3\]\[3\]
-
-  int mTMalign(\...)  char\*, double\*\*, double\[3\],      USalign.cpp
-                      double\[3\]\[3\]
-
-   int MMdock(\...)   char\*, double\*\*, double\[3\],      USalign.cpp
-                      double\[3\]\[3\]
-
-  int main(int argc,  char\*\[\], double\*\*, int\*,        USalign.cpp
-   char \*argv\[\])   double\[3\], double\[3\]\[3\]
+| 函数名 | 用到的 C 语言数据结构 | 所在文件 |
+|--------|----------------------|----------|
+| int TMalign(...) | char*, double**, double[3], double[3][3] | USalign.cpp |
+| int MMalign(...) | char*, double**, int**, double[3], double[3][3] | USalign.cpp |
+| int SOIalign(...) | char*, double**, int**, int*, double*, double[3], double[3][3] | USalign.cpp |
+| int flexalign(...) | char*, double**, double[3], double[3][3] | USalign.cpp |
+| int mTMalign(...) | char*, double**, double[3], double[3][3] | USalign.cpp |
+| int MMdock(...) | char*, double**, double[3], double[3][3] | USalign.cpp |
+| int main(int argc, char *argv[]) | char*[], double**, int*, double[3], double[3][3] | USalign.cpp |
   -----------------------------------------------------------------------
 
 ### 1.2 核心算法实现函数
@@ -116,71 +101,35 @@
 #### 1.2.1坐标变换与叠加
 
   ---------------------------------------------------------------------------
-| 函数名                 用到的C语言数据结构      所 | 文件 |  |
-|---|---|---|
-| bool Kabsch(double \*\*x, double | double\*\*, double\ | ,    Kabsch.h |
-| \*\*y, int n, int mode, double \*rm | , double\[3\], |  |
-| double t\[3\], double u\[3\]\[3\]) | double\[3\]\[3\] |  |
-
-
-  void do_rotation(double \*\*x, double double\*\*,             basic_fun.h
-     \*\*x1, int len, double t\[3\],    double\[3\],
-           double u\[3\]\[3\])          double\[3\]\[3\]
-
-  void transform(double t\[3\], double  double\[3\],            basic_fun.h
-  u\[3\]\[3\], double \*x, double \*x1) double\[3\]\[3\],
-                                        double\*
+| 函数名 | 用到的 C 语言数据结构 | 所在文件 |
+|--------|----------------------|----------|
+| bool Kabsch(double **x, double **y, int n, int mode, double *rms, double t[3], double u[3][3]) | double**, double*, double[3], double[3][3] | Kabsch.h |
+| void do_rotation(double **x, double **x1, int len, double t[3], double u[3][3]) | double**, double[3], double[3][3] | basic_fun.h |
+| void transform(double t[3], double u[3][3], double *x, double *x1) | double[3], double[3][3], double* | basic_fun.h |
   ---------------------------------------------------------------------------
 
 #### **1.2.2 序列比对**
 
   ------------------------------------------------------------------------------------
-| 函数名                   用到的C语言数据结构 | 在文件 |  |
-|---|---|---|
-| int NWalign_main(const char \*seqx, con | t char\*, int\* | NWalign.h |
-| char \*seqy, \...) |  |  |
-
-
-  void trace_back_gotoh(const char \*seqx,  char\*, int\*\*,           NWalign.h
-   const char \*seqy, int \*\* JumpH, int   int\*
-        \*\* JumpV, int \*\* P, \...)
-
-     void init_gotoh_mat(int \*\*S, int     int\*\*                    NWalign.h
-  \*\*JumpH, int \*\*JumpV, int \*\*P, int
-           \*\*H, int \*\*V, \...)
-
-   void get_seqID(int \*invmap, const char  int\*, char\*              NWalign.h
-      \*seqx, const char \*seqy, \...)
+| 函数名 | 用到的 C 语言数据结构 | 所在文件 |
+|--------|----------------------|----------|
+| int NWalign_main(const char *seqx, const char *seqy, ...) | const char*, int* | NWalign.h |
+| void trace_back_gotoh(const char *seqx, const char *seqy, int **JumpH, int **JumpV, int **P, ...) | char*, int**, int* | NWalign.h |
+| void init_gotoh_mat(int **S, int **JumpH, int **JumpV, int **P, int **H, int **V, ...) | int** | NWalign.h |
+| void get_seqID(int *invmap, const char *seqx, const char *seqy, ...) | int*, char* | NWalign.h |
   ------------------------------------------------------------------------------------
 
 #### **1.2.3 结构比对核心**
 
   ------------------------------------ -------------------------- -------------
-  函数名                               用到的 C 语言数据结构      所在文件
-
-  int TMalign_main(double \*\*xa,      double\*\*, char\*,        TMalign.h
-  double \*\*ya, char \*seqx, char     double\[3\],
-  \*seqy, \...)                        double\[3\]\[3\]
-
-  int CPalign_main(double \*\*xa,      double\*\*, char\*,        TMalign.h
-  double \*\*ya, char \*seqx, char     double\[3\],
-  \*seqy, \...)                        double\[3\]\[3\]
-
-  int SOIalign_main(double \*\*xa,     double\*\*, char\*,        SOIalign.h
-  double \*\*ya, double \*\*xk, double int\*\*, int\*,
-  \*\*yk, \...)                        double\[3\],
-                                       double\[3\]\[3\]
-
-  int flexalign_main(double \*\*xa,    double\*\*, char\*,        flexalign.h
-  double \*\*ya, char \*seqx, char     double\[3\],
-  \*seqy, \...)                        double\[3\]\[3\]
-
-  int se_main(double \*\*xa, double    double\*\*, char\*, int\*  se.h
-  \*\*ya, char \*seqx, char \*seqy,
-  \...)
-
-  void make_sec(double \*\*x, int len, double\*\*, char\*         TMalign.h
-  char \*sec)
+| 函数名 | 用到的 C 语言数据结构 | 所在文件 |
+|--------|----------------------|----------|
+| int TMalign_main(double **xa, double **ya, char *seqx, char *seqy, ...) | double**, char*, double[3], double[3][3] | TMalign.h |
+| int CPalign_main(double **xa, double **ya, char *seqx, char *seqy, ...) | double**, char*, double[3], double[3][3] | TMalign.h |
+| int SOIalign_main(double **xa, double **ya, double **xk, double **yk, ...) | double**, char*, int**, int*, double[3], double[3][3] | SOIalign.h |
+| int flexalign_main(double **xa, double **ya, char *seqx, char *seqy, ...) | double**, char*, double[3], double[3][3] | flexalign.h |
+| int se_main(double **xa, double **ya, char *seqx, char *seqy, ...) | double**, char*, int* | se.h |
+| void make_sec(double **x, int len, char *sec) | double**, char* | TMalign.h |
   ------------------------------------ -------------------------- -------------
 
 ### 1.3 IO与工具函数
@@ -188,69 +137,42 @@
 #### **1.3.1内存管理**
 
   --------------------------------------------- ----------------------------- -------------
-  函数名                                        用到的 C 语言数据结构         所在文件
-
-  template \<class A\> void NewArray(A \*\*\*   A\*\*\*（任意类型二维指针）   basic_fun.h
-  array, int Narray1, int Narray2)
-
-  template \<class A\> void DeleteArray(A       A\*\*\*（任意类型二维指针）   basic_fun.h
-  \*\*\* array, int Narray)
+| 函数名 | 用到的 C 语言数据结构 | 所在文件 |
+|--------|----------------------|----------|
+| template <class A> void NewArray(A ***array, int Narray1, int Narray2) | A***（任意类型二维指针） | basic_fun.h |
+| template <class A> void DeleteArray(A ***array, int Narray) | A***（任意类型二维指针） | basic_fun.h |
   --------------------------------------------- ----------------------------- -------------
 
 #### 1.3.2 文件读取与解析
 
   -------------------------------------------------- -------------- -------------
-  函数名                                             用到的 C       所在文件
-                                                     语言数据结构
-
-  int read_PDB(const vector\<string\> &PDB_lines,    double\*\*,    basic_fun.h
-  double \*\*a, char \*seq, \...)                    char\*
-
-  void                                               char\*, FILE\* basic_fun.h
-  read_user_alignment(vector\<string\>&sequence,
-  const string &fname_lign, \...)
-
-  void file2chainlist(vector\<string\>&chain_list,   char\*, FILE\* basic_fun.h
-  \...)
-
-  void                                               char\*, FILE\* basic_fun.h
-  file2chainpairlist(vector\<string\>&chain1_list,
-  vector\<string\>&chain2_list, \...)
+| 函数名 | 用到的 C 语言数据结构 | 所在文件 |
+|--------|----------------------|----------|
+| int read_PDB(const vector<string> &PDB_lines, double **a, char *seq, ...) | double**, char* | basic_fun.h |
+| void read_user_alignment(vector<string>&sequence, const string &fname_lign, ...) | char*, FILE* | basic_fun.h |
+| void file2chainlist(vector<string>&chain_list, ...) | char*, FILE* | basic_fun.h |
+| void file2chainpairlist(vector<string>&chain1_list, vector<string>&chain2_list, ...) | char*, FILE* | basic_fun.h |
   -------------------------------------------------- -------------- -------------
 
 #### **1.3.3 结果输出**
 
   ------------------------------------------ -------------------- -------------
-  函数名                                     用到的 C             所在文件
-                                             语言数据结构
-
-  void output_results(\..., double t0\[3\],  char\*, double\[3\], TMalign.h
-  double u0\[3\]\[3\], const char \*seqM,    double\[3\]\[3\],
-  \...)                                      FILE\*
-
-  void output_NWalign_results(\..., const    char\*               NWalign.h
-  char \*chainID1, const char \*chainID2,
-  \...)
-
-  void output_flexalign_results(\...)        char\*, double\[3\], flexalign.h
-                                             double\[3\]\[3\]
+| 函数名 | 用到的 C 语言数据结构 | 所在文件 |
+|--------|----------------------|----------|
+| void output_results(..., double t0[3], double u0[3][3], const char *seqM, ...) | char*, double[3], double[3][3], FILE* | TMalign.h |
+| void output_NWalign_results(..., const char *chainID1, const char *chainID2, ...) | char* | NWalign.h |
+| void output_flexalign_results(...) | char*, double[3], double[3][3] | flexalign.h |
   ------------------------------------------ -------------------- -------------
 
 #### 1.3.4 通用工具
 
   ------------------------------------------------ -------------- -------------
-  函数名                                           用到的 C       所在文件
-                                                   语言数据结构
-
-  double dist(double x\[3\], double y\[3\])        double\[3\]    basic_fun.h
-
-  double dot(double \*a, double \*b)               double\*       basic_fun.h
-
-  void assign_sec_bond(int \*\*secx_bond, const    int\*\*,       SOIalign.h
-  char \*secx, const int xlen)                     char\*
-
-  void getCloseK(double \*\*xa, const int xlen,    double\*\*     SOIalign.h
-  const int closeK_opt, double \*\*xk)
+| 函数名 | 用到的 C 语言数据结构 | 所在文件 |
+|--------|----------------------|----------|
+| double dist(double x[3], double y[3]) | double[3] | basic_fun.h |
+| double dot(double *a, double *b) | double* | basic_fun.h |
+| void assign_sec_bond(int **secx_bond, const char *secx, const int xlen) | int**, char* | SOIalign.h |
+| void getCloseK(double **xa, const int xlen, const int closeK_opt, double **xk) | double** | SOIalign.h |
   ------------------------------------------------ -------------- -------------
 
 ## 第二部分 C风格代码整改为C++风格影响分析(重点关注性能)
